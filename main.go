@@ -1,11 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"ginFrameBasics/server"
+)
 
 func main() {
-	fmt.Println("main ----")
+	fmt.Println("load config  ----")
+	server.StartServer()
 }
-
-
-
-

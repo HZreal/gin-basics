@@ -6,8 +6,6 @@ import (
 	"net/http"
 )
 
-
-
 func login(c *gin.Context) {
 	c.String(http.StatusOK, "login success")
 }
@@ -75,8 +73,7 @@ func parseRawBody(ctx *gin.Context) {
 
 }
 
-
-func main() {
+func StartServer() {
 	// 1.创建路由
 	var r *gin.Engine = gin.Default()
 	// 2.绑定路由规则，执行的函数
@@ -107,6 +104,3 @@ func main() {
 	// Run("里面不指定端口号默认为8080")
 	r.Run("0.0.0.0:8000")
 }
-
-
-
