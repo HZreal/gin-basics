@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"ginFrameBasics/server"
+	"github.com/HZreal/gin-basics/server"
 )
 
 func main() {
